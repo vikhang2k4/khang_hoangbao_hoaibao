@@ -1,16 +1,21 @@
 #include<stdio.h>
-void InTamGiac(int x){
-    for(int i=1;i<=x;i++) {
-        for(int j=i;j<=i;j++){
-            printf("%d", j);
+void NhapTuanTu(int n){
+    int so;
+    for(int i=1;i<=n;i++) {
+        do{
+            printf("Nhập số thứ %d: ",i);
+            scanf("%d",&so);
+            if (so!=i);
+                printf("Sai ! Hãy nhập lại số %d \n",i)
         }
-        printf("\n");
+        while (so!=i);
     }
+    printf("Bạn đã nhập đúng từ 1 đến %d \n",n);
 }
 int main(){
-    int x;
-    printf("Nhập vào x: ");
-    scanf("%d",&x);
-    IntamGiac(x);
+    int n;
+    printf("Nhập vào n: ");
+    scanf("%d",&n);
+    NhapTuanTu(n);
     return 0;
 }

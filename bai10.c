@@ -1,21 +1,19 @@
 #include<stdio.h>
-void NhapTuanTu(int n){
-    int so;
-    for(int i=1;i<=n;i++) {
-        do{
-            printf("Nhập số thứ %d: ",i);
-            scanf("%d",&so);
-            if (so!=i);
-                printf("Sai ! Hãy nhập lại số %d \n",i)
-        }
-        while (so!=i);
+void InFibo(int n){
+    int a=0, b=1, c;
+    printf("Dãy Fibonacci nhỏ hơn %d là: ",n);
+    while(a<n){
+        printf("%d",a);
+        c=a+b
+        a=b
+        b=c;
     }
-    printf("Bạn đã nhập đúng từ 1 đến %d \n",n);
+    printf("\n")
 }
 int main(){
     int n;
-    printf("Nhập vào n: ");
-    scanf("%d",&n);
-    NhapTuanTu(n);
+    printf("Nhập n: ");
+    scanf("%d",&n)
+    InFibo(n);
     return 0;
 }
