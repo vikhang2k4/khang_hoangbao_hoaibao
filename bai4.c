@@ -22,11 +22,11 @@ void xeploai(float dtb)
 int main()
 {
     float t, v, av, dtb;
-    print("Nhập điểm toán: ");
+    printf("Nhập điểm toán: ");
     scanf("%f", &t);
-    print("Nhập điểm văn: ");
+    printf("Nhập điểm văn: ");
     scanf("%f", &v);
-    print("Nhập điểm anh van: ");
+    printf("Nhập điểm anh van: ");
     scanf("%f", &av);
 
     dtb = tinhdiemtb(t, v, av);
