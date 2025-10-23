@@ -5,7 +5,7 @@ int tinhgiaithua(int n)
     int gt =1;
     for (int i = 1; i<=n; i++)
     {
-        gt = gt *1 ;
+        gt = gt *i ;
     }
     return gt;
 }
